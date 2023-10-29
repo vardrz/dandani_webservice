@@ -16,6 +16,7 @@ class MitraSeeder extends Seeder
     {
         DB::table('mitras')->insert([
             [
+                "account" => "berkahcomputer@gmail.com",
                 "name" => "Semoga Berkah Computer",
                 "specialist" => "Laptop, Komputer, Printer, CPU, Monitor",
                 "district" => "Pekalongan Utara",
@@ -23,6 +24,7 @@ class MitraSeeder extends Seeder
                 "photo" => "https://media.pricebook.co.id/article/5798b37f150ba0ba097b23c6/5798b37f150ba0ba097b23c6_1601549811.jpg"
             ],
             [
+                "account" => "mxcomp@gmail.com",
                 "name" => "MX Komputer",
                 "specialist" => "Laptop, Komputer, Printer, CPU, Monitor",
                 "district" => "Wiradesa",
@@ -30,6 +32,7 @@ class MitraSeeder extends Seeder
                 "photo" => "https://i2.wp.com/caritempat.online/wp-content/uploads/2020/07/version-computer.jpg"
             ],
             [
+                "account" => "sjkomp@gmail.com",
                 "name" => "Service Jaya Komputer",
                 "specialist" => "Laptop, Komputer, Printer, CPU, Monitor",
                 "district" => "Tirto",
@@ -37,6 +40,7 @@ class MitraSeeder extends Seeder
                 "photo" => "https://2.bp.blogspot.com/_GuW-Nk9Evvo/TTwaZAFAqqI/AAAAAAAAAwQ/sP6OEsAvL44/s1600/DSCF1252.jpg"
             ],
             [
+                "account" => "yamahamusmot@gmail.com",
                 "name" => "Yamaha Mustika Motor",
                 "specialist" => "Motor, Ganti Oli, Tambal Ban",
                 "district" => "Tirto",

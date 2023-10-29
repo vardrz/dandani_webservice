@@ -19,8 +19,8 @@ use App\Http\Controllers\MitraController;
 //     return $request->user();
 // });
 
-Route::get('/mitras', [MitraController::class, 'index']);
-Route::post('/mitras', [MitraController::class, 'store']);
-Route::get('/mitras/{id}', [MitraController::class, 'show']);
-Route::put('/mitras/{id}', [MitraController::class, 'update']);
-Route::delete('/mitras/{id}', [MitraController::class, 'destroy']);
+// Route::get('/mitras', [MitraController::class, 'index']);
+// Route::post('/mitras', [MitraController::class, 'store']);
+// Route::get('/mitras/{id}', [MitraController::class, 'show']);
+// Route::put('/mitras/{id}', [MitraController::class, 'update']);
+// Route::delete('/mitras/{id}', [MitraController::class, 'destroy']);

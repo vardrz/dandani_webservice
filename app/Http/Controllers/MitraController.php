@@ -17,12 +17,24 @@ class MitraController extends Controller
         return response()->json($mitras);
     }
 
-    public function add($account = "null")
+    public function add($account = null)
     {
         return view('addMitra', [
             'title' => 'Tambah Data Mitra',
             'akun' => $account
         ]);
+    }
+
+    public function show($account = null)
+    {
+        $mitra = Mitra::where("account", $account)->get();
+
+        // dd();
+        if (count($mitra) == 1) {
+            return response()->json($mitra);
+        } else {
+            return response()->json([["message" => "User not found"]], 404);
+        }
     }
 
     public function store(Request $request)

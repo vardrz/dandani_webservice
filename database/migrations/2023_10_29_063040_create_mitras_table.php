@@ -15,11 +15,13 @@ class CreateMitrasTable extends Migration
     {
         Schema::create('mitras', function (Blueprint $table) {
             $table->id();
+            $table->string('account');
             $table->string('name');
             $table->string('specialist');
             $table->string('district');
             $table->string('city');
             $table->string('photo');
+            $table->string('maps')->nullable();
             $table->timestamps();
         });
     }

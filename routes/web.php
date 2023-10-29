@@ -24,5 +24,6 @@ use App\Http\Controllers\MitraController;
 // Route::delete('/mitras/{id}', [MitraController::class, 'destroy']);
 
 Route::get('/mitras', [MitraController::class, 'index']);
+Route::get('/mitras/{account}', [MitraController::class, 'show']);
 Route::get('/addmitras/{account}', [MitraController::class, 'add']);
 Route::post('/addmitras', [MitraController::class, 'store']);
