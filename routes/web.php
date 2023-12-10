@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MitraController;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,9 @@ use App\Http\Controllers\MitraController;
 // Route::put('/mitras/{id}', [MitraController::class, 'update']);
 // Route::delete('/mitras/{id}', [MitraController::class, 'destroy']);
 
+// API
 Route::get('/mitras', [MitraController::class, 'index']);
 Route::get('/mitras/{account}', [MitraController::class, 'show']);
+
 Route::get('/addmitras/{account}', [MitraController::class, 'add']);
 Route::post('/addmitras', [MitraController::class, 'store']);

@@ -18,33 +18,57 @@ class MitraSeeder extends Seeder
             [
                 "account" => "berkahcomputer@gmail.com",
                 "name" => "Semoga Berkah Computer",
+                "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est nulla accusantium minima sint mollitia possimus officia officiis, vel nemo omnis dolore iure excepturi sunt quos fuga, amet, reiciendis veniam?
+Similique vitae harum cum impedit nobis, molestias quae maiores libero consectetur enim? Tempore, architecto consequuntur illum nemo animi quia adipisci corrupti id asperiores suscipit. Rerum porro nam neque consequuntur! Unde?
+Unde facilis maiores, sit natus officia minima, ipsum esse eum iusto aperiam, praesentium iure provident deleniti modi ducimus eligendi! Voluptatem porro blanditiis temporibus autem, odio eaque minima fugiat eius hic.",
                 "specialist" => "Laptop, Komputer, Printer, CPU, Monitor",
-                "district" => "Pekalongan Utara",
+                "whatsapp" => "089525196861",
+                "province" => "Jawa Tengah",
                 "city" => "Kota Pekalongan",
-                "photo" => "https://media.pricebook.co.id/article/5798b37f150ba0ba097b23c6/5798b37f150ba0ba097b23c6_1601549811.jpg"
+                "district" => "Pekalongan Utara",
+                "maps" => "-6.89123390515685,109.62671025759383",
+                "photo" => "https://i2.wp.com/caritempat.online/wp-content/uploads/2020/07/version-computer.jpg"
             ],
             [
                 "account" => "mxcomp@gmail.com",
                 "name" => "MX Komputer",
+                "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est nulla accusantium minima sint mollitia possimus officia officiis, vel nemo omnis dolore iure excepturi sunt quos fuga, amet, reiciendis veniam?
+Similique vitae harum cum impedit nobis, molestias quae maiores libero consectetur enim? Tempore, architecto consequuntur illum nemo animi quia adipisci corrupti id asperiores suscipit. Rerum porro nam neque consequuntur! Unde?
+Unde facilis maiores, sit natus officia minima, ipsum esse eum iusto aperiam, praesentium iure provident deleniti modi ducimus eligendi! Voluptatem porro blanditiis temporibus autem, odio eaque minima fugiat eius hic.",
                 "specialist" => "Laptop, Komputer, Printer, CPU, Monitor",
+                "whatsapp" => "089525196861",
+                "province" => "Jawa Tengah",
+                "city" => "Kabupaten Pekalongan",
                 "district" => "Wiradesa",
-                "city" => "Kab. Pekalongan",
-                "photo" => "https://i2.wp.com/caritempat.online/wp-content/uploads/2020/07/version-computer.jpg"
+                "maps" => "-6.89123390515685,109.62671025759383",
+                "photo" => "https://sukangulik.com/wp-content/uploads/2023/03/tripio-comp.png"
             ],
             [
                 "account" => "sjkomp@gmail.com",
                 "name" => "Service Jaya Komputer",
+                "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est nulla accusantium minima sint mollitia possimus officia officiis, vel nemo omnis dolore iure excepturi sunt quos fuga, amet, reiciendis veniam?
+Similique vitae harum cum impedit nobis, molestias quae maiores libero consectetur enim? Tempore, architecto consequuntur illum nemo animi quia adipisci corrupti id asperiores suscipit. Rerum porro nam neque consequuntur! Unde?
+Unde facilis maiores, sit natus officia minima, ipsum esse eum iusto aperiam, praesentium iure provident deleniti modi ducimus eligendi! Voluptatem porro blanditiis temporibus autem, odio eaque minima fugiat eius hic.",
                 "specialist" => "Laptop, Komputer, Printer, CPU, Monitor",
+                "whatsapp" => "089525196861",
+                "province" => "Jawa Tengah",
+                "city" => "Kabupaten Pekalongan",
                 "district" => "Tirto",
-                "city" => "Kab. Pekalongan",
+                "maps" => "-6.89123390515685,109.62671025759383",
                 "photo" => "https://2.bp.blogspot.com/_GuW-Nk9Evvo/TTwaZAFAqqI/AAAAAAAAAwQ/sP6OEsAvL44/s1600/DSCF1252.jpg"
             ],
             [
                 "account" => "yamahamusmot@gmail.com",
                 "name" => "Yamaha Mustika Motor",
+                "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est nulla accusantium minima sint mollitia possimus officia officiis, vel nemo omnis dolore iure excepturi sunt quos fuga, amet, reiciendis veniam?
+Similique vitae harum cum impedit nobis, molestias quae maiores libero consectetur enim? Tempore, architecto consequuntur illum nemo animi quia adipisci corrupti id asperiores suscipit. Rerum porro nam neque consequuntur! Unde?
+Unde facilis maiores, sit natus officia minima, ipsum esse eum iusto aperiam, praesentium iure provident deleniti modi ducimus eligendi! Voluptatem porro blanditiis temporibus autem, odio eaque minima fugiat eius hic.",
                 "specialist" => "Motor, Ganti Oli, Tambal Ban",
+                "whatsapp" => "089525196861",
+                "province" => "Jawa Tengah",
+                "city" => "Kabupaten Pekalongan",
                 "district" => "Tirto",
-                "city" => "Kab. Pekalongan",
+                "maps" => "-6.89123390515685,109.62671025759383",
                 "photo" => "https://blog-media.lifepal.co.id/app/uploads/sites/3/2020/12/11113214/bengkel-resmi-yamaha-1.jpg"
             ]
         ]);

@@ -17,11 +17,14 @@ class CreateMitrasTable extends Migration
             $table->id();
             $table->string('account');
             $table->string('name');
+            $table->longText('desc');
             $table->string('specialist');
-            $table->string('district');
+            $table->string('whatsapp');
+            $table->string('province');
             $table->string('city');
-            $table->string('photo');
+            $table->string('district');
             $table->string('maps')->nullable();
+            $table->string('photo');
             $table->timestamps();
         });
     }

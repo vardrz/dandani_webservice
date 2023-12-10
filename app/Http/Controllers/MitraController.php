@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 
 class MitraController extends Controller
@@ -52,5 +53,55 @@ class MitraController extends Controller
         ];
 
         dd($data);
+    }
+
+    public function post(Request $request)
+    {
+        //set validation
+        $validator = Validator::make($request->all(), [
+            'account'   => 'required',
+            'name'   => 'required',
+            'desc' => 'required',
+            'specialist' => 'required',
+            'whatsapp' => 'required',
+            'province' => 'required',
+            'city' => 'required',
+            'district' => 'required',
+        ]);
+
+        //response error validation
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 400);
+        }
+
+        //save to database
+        $post = Mitra::create([
+            "account" => $request->account,
+            "name" => $request->name,
+            "desc" => $request->desc,
+            "specialist" => $request->specialist,
+            "whatsapp" => $request->whatsapp,
+            "province" => $request->province,
+            "city" => $request->city,
+            "district" => $request->district,
+            "maps" => $request->maps,
+            "photo" => url('/') . "/image/default.jpg"
+        ]);
+
+        //success save to database
+        if ($post) {
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Mitra saved',
+                'data'    => $post
+            ], 201);
+        }
+
+        //failed save to database
+        return response()->json([
+            'success' => false,
+            'message' => 'Mitra Failed to Save',
+        ], 409);
     }
 }
