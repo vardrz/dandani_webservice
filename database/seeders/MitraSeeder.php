@@ -58,7 +58,7 @@ Unde facilis maiores, sit natus officia minima, ipsum esse eum iusto aperiam, pr
                 "photo" => "https://2.bp.blogspot.com/_GuW-Nk9Evvo/TTwaZAFAqqI/AAAAAAAAAwQ/sP6OEsAvL44/s1600/DSCF1252.jpg"
             ],
             [
-                "account" => "yamahamusmot@gmail.com",
+                "account" => "faridcardokaka88@gmail.com",
                 "name" => "Yamaha Mustika Motor",
                 "desc" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est nulla accusantium minima sint mollitia possimus officia officiis, vel nemo omnis dolore iure excepturi sunt quos fuga, amet, reiciendis veniam?
 Similique vitae harum cum impedit nobis, molestias quae maiores libero consectetur enim? Tempore, architecto consequuntur illum nemo animi quia adipisci corrupti id asperiores suscipit. Rerum porro nam neque consequuntur! Unde?

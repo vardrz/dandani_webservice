@@ -21,3 +21,7 @@ use App\Http\Controllers\MitraController;
 
 
 Route::post('/mitras', [MitraController::class, 'post'])->middleware('api');
+Route::post('/mitras/update', [MitraController::class, 'put'])->middleware('api');
+
+Route::post('/district', [MitraController::class, 'district']);
+Route::post('/city', [MitraController::class, 'city']);

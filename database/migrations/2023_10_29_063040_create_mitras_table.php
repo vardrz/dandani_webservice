@@ -15,7 +15,7 @@ class CreateMitrasTable extends Migration
     {
         Schema::create('mitras', function (Blueprint $table) {
             $table->id();
-            $table->string('account');
+            $table->string('account')->unique();
             $table->string('name');
             $table->longText('desc');
             $table->string('specialist');
