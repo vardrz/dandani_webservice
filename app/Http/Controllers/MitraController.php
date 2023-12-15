@@ -28,14 +28,27 @@ class MitraController extends Controller
 
     public function search($key, $city, $district = null)
     {
-        if ($district != null) {
-            $mitra = Mitra::where("city", "like", "%" . $city . "%")->where("district", "like", "%" . $district . "%")->where(function ($q) use ($key) {
-                $q->where("name", "like", "%" . $key . "%")->orWhere("desc", "like", "%" . $key . "%")->orWhere("specialist", "like", "%" . $key . "%");
-            })->get();
+        $key = str_split($key);
+        if ($key[0] == ' ') {
+            array_shift($key);
+        }
+        if ($key[count($key) - 1] == ' ') {
+            array_pop($key);
+        }
+        $key = implode($key);
+
+        if ($city != null) {
+            if ($district != null) {
+                $mitra = Mitra::where("city", "like", "%" . $city . "%")->where("district", "like", "%" . $district . "%")->where(function ($q) use ($key) {
+                    $q->where("name", "like", "%" . $key . "%")->orWhere("desc", "like", "%" . $key . "%")->orWhere("specialist", "like", "%" . $key . "%");
+                })->get();
+            } else {
+                $mitra = Mitra::where("city", "like", "%" . $city . "%")->where(function ($q) use ($key) {
+                    $q->where("name", "like", "%" . $key . "%")->orWhere("desc", "like", "%" . $key . "%")->orWhere("specialist", "like", "%" . $key . "%");
+                })->get();
+            }
         } else {
-            $mitra = Mitra::where("city", "like", "%" . $city . "%")->where(function ($q) use ($key) {
-                $q->where("name", "like", "%" . $key . "%")->orWhere("desc", "like", "%" . $key . "%")->orWhere("specialist", "like", "%" . $key . "%");
-            })->get();
+            $mitra = Mitra::where("name", "like", "%" . $key . "%")->orWhere("desc", "like", "%" . $key . "%")->orWhere("specialist", "like", "%" . $key . "%")->get();
         }
         // @dd($mitra);
 

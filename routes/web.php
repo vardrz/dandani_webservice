@@ -27,7 +27,7 @@ use Illuminate\Http\Request;
 // API
 Route::get('/mitras', [MitraController::class, 'index']);
 Route::get('/mitras/{account}', [MitraController::class, 'show']);
-Route::get('/search/{key}/{city}/{district?}', [MitraController::class, 'search']);
+Route::get('/search/{key}/{city?}/{district?}', [MitraController::class, 'search']);
 
 
 // Input via Web
